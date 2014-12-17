@@ -45,7 +45,7 @@ class composer (
     path    => '/usr/bin:/bin:/usr/sbin:/sbin',
     cwd     => $::composer::params::target_dir,
     user    => $::composer::params::user,
-    unless  => "test -x ${::composer_path}",
+    unless  => "test -x ${composer_path}",
     require => Wget::Fetch['composer-install'],
   }
 
