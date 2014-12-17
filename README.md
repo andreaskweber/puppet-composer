@@ -3,7 +3,7 @@ This module manages the installation of Composer.
 
 ##Dependencies
 
-- https://github.com/andreas-weber/puppet-wget
+- https://github.com/maestrodev/puppet-wget
 
 ## Usage in Vagrantfile
 
