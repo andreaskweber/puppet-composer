@@ -20,7 +20,8 @@
 # Copyright 2014 Andreas Weber
 #
 class composer::params {
-  $phar_location = 'https://getcomposer.org/composer.phar'
-  $target_dir    = '/usr/local/bin'
-  $user          = 'root'
+  $phar_location  = 'https://getcomposer.org/composer.phar'
+  $target_dir     = '/usr/local/bin'
+  $user           = 'root'
+  $token_template = 'composer/auth.json.erb'
 }
