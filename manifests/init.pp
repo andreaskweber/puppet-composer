@@ -37,8 +37,7 @@ class composer (
   exec{ 'composer-install':
     command => "wget -q ${::composer::params::phar_location} -O ${composer_binary}",
     path    => '/usr/bin:/bin:/usr/sbin:/sbin',
-    creates => $composer_binary,
-    require => Package['wget']
+    creates => $composer_binary
   }
 
   exec { 'composer-fix-permissions':
