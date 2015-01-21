@@ -1,12 +1,16 @@
 #Puppet Module - Composer
-This module manages the installation of Composer.
+This module manages the installation and updates of Composer.
 
 ##Dependencies
 
 None.
 
-## Usage in Vagrantfile
+## Puppetfile
 
 ```
-mod 'composer', :git => 'https://github.com/andreas-weber/puppet-composer.git'
+mod 'aw_composer', :git => 'https://github.com/andreas-weber/puppet-composer.git'
 ```
+
+## Usage
+
+See puppet manifests.

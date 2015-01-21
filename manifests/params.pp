@@ -1,4 +1,4 @@
-# = Class: composer::params
+# = Class: aw_composer::params
 #
 # This class defines default parameters used by the main module class composer.
 #
@@ -17,11 +17,11 @@
 #
 # === Copyright
 #
-# Copyright 2014 Andreas Weber
+# Copyright 2015 Andreas Weber
 #
-class composer::params {
+class aw_composer::params {
   $phar_location  = 'https://getcomposer.org/composer.phar'
   $target_dir     = '/usr/local/bin'
   $user           = 'root'
-  $token_template = 'composer/auth.json.erb'
+  $token_template = 'aw_composer/auth.json.erb'
 }
