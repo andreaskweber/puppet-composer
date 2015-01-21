@@ -43,11 +43,11 @@ define aw_composer::token (
   }
 
   file { "${home_dir}/.composer/auth.json":
-    ensure  => 'file',
-    owner   => $user,
-    group   => $user,
-    mode    => '0644',
-    source  => template($::aw_composer::params::token_template),
-    require => File["${home_dir}/.composer"]
+    ensure   => 'file',
+    owner    => $user,
+    group    => $user,
+    mode     => '0644',
+    content  => template($::aw_composer::params::token_template),
+    require  => File["${home_dir}/.composer"]
   }
 }
