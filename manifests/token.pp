@@ -5,9 +5,6 @@
 #
 # === Parameters
 #
-# [*user*]
-#   The user for whom the token file should be created.
-#
 # [*home_dir*]
 #   The users home directory.
 #
@@ -16,9 +13,8 @@
 #
 # === Examples
 #
-#  aw_composer::token { 'some_name':
-#    user => 'some_user',
-#    home_dir => '/home/some_user',
+#  aw_composer::token { 'some_username':
+#    home_dir => '/home/some_username',
 #    token => '9fXX9df645aa57da26f41bbcb9be73XXXXXXXX'
 #  }
 #
@@ -31,12 +27,13 @@
 # Copyright 2015 Andreas Weber
 #
 define aw_composer::token (
-  $user,
   $home_dir,
   $token
 )
 {
   include aw_composer::params
+
+  $user = $title
 
   file { "${home_dir}/.composer":
     ensure  => 'directory',
