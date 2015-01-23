@@ -15,7 +15,7 @@
 #
 #  aw_composer::token { 'some_username':
 #    home_dir => '/home/some_username',
-#    token => '9fXX9df645aa57da26f41bbcb9be73XXXXXXXX'
+#    token    => '9fXX9df645aa57da26f41bbcb9be73XXXXXXXX'
 #  }
 #
 # === Authors

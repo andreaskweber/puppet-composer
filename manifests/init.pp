@@ -12,7 +12,7 @@
 #   include aw_composer
 #
 #   class { 'aw_composer':
-#     'auto_update'  => true
+#     auto_update  => true
 #   }
 #
 # === Authors
